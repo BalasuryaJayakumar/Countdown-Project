@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lobster&family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(1rem, 2.5vh, 1.5rem);
+  width: 100vw;
+  height: 100vh;
+  color: #000;
+  background-color: aliceblue;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem;
+  gap: 1rem;
+}
+
+.main {
+  width: 400px;
+  margin-top: 1rem;
+}
+
+.head_img {
+  width: 400px;
+}
+
+.main_h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: rgb(5, 179, 237);
+}
+
+.giveaway_h4 {
+  letter-spacing: 0.1em;
+  margin: 0.5rem 0;
+}
+
+.giveaway_para {
+  color: rgb(108, 136, 160);
+  margin: 1.25rem 0;
+}
+
+.countdown {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.timer {
+  background-color: midnightblue;
+  color: whitesmoke;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  width: 90px;
+  height: 90px;
+}
+
+.date {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.timer h4 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width:600px) {
+  .main {
+    width: 500px;
+  }
+  .head_img {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width:700px) {
+  .main {
+    width: 600px;
+  }
+  .head_img {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width:850px) {
+  .main {
+    width: 500px;
+  }
+  .head_img {
+    width: 500px;
+  }
+  body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem;
+    gap: 3rem;
+  }
+}
+
